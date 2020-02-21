@@ -1,0 +1,57 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#basics" aria-controls="basics" role="tab" data-toggle="tab">Basics</a></li>
+    <li role="presentation"><a href="#webdev" aria-controls="webdev" role="tab" data-toggle="tab">Web Dev</a></li>
+    <li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab">Data Analysis</a></li>
+    <li role="presentation"><a href="#ml" aria-controls="ml" role="tab" data-toggle="tab">Machine Learning</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="basics">
+    	<ul>
+    		{% for t in TOPIC_DICT["Basics"] %}
+    			<li><a href="{{t[1]}}">{{t[0]}}</a></li>
+    		{% endfor %}
+    	</ul>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane fade" id="webdev">
+		<ul>
+			{% for t in TOPIC_DICT["Web Dev"] %}
+				<li><a href="{{t[1]}}">{{t[0]}}</a></li>
+			{% endfor %}
+    	</ul>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane fade" id="analysis">
+		<ul>
+			{% for t in TOPIC_DICT["Data Analysis"] %}
+				<li><a href="{{t[1]}}">{{t[0]}}</a></li>
+			{% endfor %}
+    	</ul>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane fade" id="ml">
+		<ul>
+    		{% for t in TOPIC_DICT["Machine Learning"] %}
+    			<li><a href="{{t[1]}}">{{t[0]}}</a></li>
+    		{% endfor %}
+    	</ul>
+    </div>
+  </div>
+
+</div>
+
+<p> Hello! Welcome to My page. This is only a test page. </p>
+
+{% endblock %}
