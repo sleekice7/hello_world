@@ -1,0 +1,25 @@
+Problem Description :  LU and call failure
+
+Current Impact : both MO and MT Calls are failing 
+
+Actions taken by LS/Customer before emergency was raised :
+
+- All subscribers are loosing Network
+- There are several sctp flapping alarms
+- There was a disaster recovery test last night. HLR port and HSS ports has been blocked for 1 geographical site at mpbn and re-enabled.
+- Issue observed around 10:30 AM.
+- 2 BC in the network, DC and HO. Issue is with both.
+
+
+Problem Description and RSG details : - LS - Done
+2. Node login and healthcheck - GE- Ongoing
+3. Engage GE APZ support - RL - Done
+4. Reload from backup - GE / LS - Pending.
+5. PTCRI reload with relfsw0 in DCMBC1 - GE - Done // No improvement
+6. PTCRI boot in DCMBC1 - GE - Done // No Improvement
+7. Intial load Blades one by one - GE APZ - Done // No Improvement
+8. Customer to check Power/Voltage on DCMBC1 - Customer - Done // Customer confirms all OK. 
+9. Clear power alarms on DCMBC1 - GE - Done
+10. APG failover on DCMBC1 - LS - Done // No Improvement
+11. Reload DCBC01 ongoing using 3rd oct backup - GE - Done // No improvement
+12. Lock/Unlock boards on DCMBC1 - GE - Ongoing

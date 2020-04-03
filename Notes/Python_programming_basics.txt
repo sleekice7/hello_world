@@ -1,0 +1,175 @@
+python:
+
+String manipulation functions:
+=========================================================
+name = "Kwame Nsiah"
+print(name)
+print(name.index("N")) will return 6, then index of N in Nsiah
+print(len(name)) will return the length of placeholder name
+print(name.upper()) will convert all string to uppercase
+print(name.lower()) will convert all string to lowercase
+print(name.isupper()) will check if string is all uppercase
+print(name.upper().isupper()) will convert to uppercase and check if string is uppercase
+print(name.replace("Kwame","Kwasi")) will replace Kwame with Kwasi.
+
+Type casting or variable conversion:
+=========================================================
+age = 75
+print("I am " + str(age) + " years old.")
+
+
+Math functions:
+=========================================================
+pow(a,b)
+max(a,b)
+min(a,b)
+sqrt(a,b)
+ceil()
+floor()
+count()
+
+Lists and methods that can be used on lists:
+==========================================================
+friends = ["Kwame", "Kwabena", "Kwesi"]
+friends.append("Kwaku")
+friends.insert("Kofi")
+friends.remove("Kwame")
+friends.clear()
+friends.pop()
+friends.count()
+friends.reverse()
+friends2 = friends.copy()
+
+For Loop
+==========================================================
+for index in range(10):
+	print(index)
+>>>this outputs 0 to 9
+
+friends = ["kwabena","kwame","kwesi"]
+for index in range(len(friends)):
+	print(friends[index])
+	
+friends = ["Jim","karen","kevin"]
+for index in range(5):
+	if index == 0:
+		print("first Iteration")
+	else:
+		print("Not first")
+		
+Exponential Functions:
+==========================================================
+def raise_to_power(base, pow):
+	result = 1
+	for index in range(pow):
+		result = result * base
+	return result
+print(raise_to_power(2,3))
+>>>this will print 8, which is 2 raised to power 3
+ 
+For Loop and If Loops
+==========================================================
+def translate(phrase):
+	translation = ""
+	for letter in phrase:
+		if letter in "AEIOUaeiou":
+			translation = translation + "g"
+		else:
+			translation = translation + "letter"
+	return translation
+	
+print(translation(input("Enter a phrase: ")))
+
+OR
+
+def translate(phrase):
+	translation = ""
+	for letter in phrase:
+		if letter.lower() in "aeiou":
+			if letter.isupper():
+				translation = translation + "G"
+			else:
+				translation = translation + "g"
+		else:
+			translation = translation + letter
+	return translation
+	
+print(translation(input("Enter a phrase: ")))
+
+
+Try / Except
+=========================================================
+It means try and run a piece of code, and if it runs successfully, voila!
+but if it doesn't because the unexpected happens,eg user entering
+string characters instead of integer, handle it using except.
+
+try:
+	answer = 10/0
+	number = int(input("Enter a number: "))
+	print(number)
+except:
+	print("Invalid Input")
+except ValueError:
+	print("Invalid Input")
+except  ZeroDivisionError as err:
+	print("err")
+	
+>>>this will print "division by zero" as the error caught.
+
+
+Read Files
+==========================================================
+Some python read modes: r(read only),r+(read and write),w(write),a(append)
+
+employee_file = open("employees.txt", "r")	#opens file
+
+print(employee_file.readable())
+print(employee_file.read())		#reads whole file
+print(employee_file.readline())		#reads a line
+print(employee_file.readlines())	#reads multiple lines
+
+for employee in employee_file.readlines():
+	print(employee)
+
+employee_file.close()	#closes file
+
+
+Writing to Files
+==========================================================
+employee_file = open("employee.txt", "w")
+
+employee_file.write()	#overwrites everything in the file.
+
+employee_file.close()
+
+Modules & Pip
+==========================================================
+You can check out this page for the official python modules
+https://docs.python.org/3/py-modindex.html
+
+
+
+
+Classes & Objects
+=========================================================
+class file:-Student.py
+
+class Student:
+
+	def __init__(self, name, id, major, gpa):
+		self.name = name
+		self.id = id
+		self.major = major
+		self.gpa = gpa
+		
+		
+		
+object file:-app.py
+
+from Student import Student
+
+student1 = Student("Kwabena", "1047799", "Science", 3.5)
+print(student1.name)
+print(student.id)
+print(student.major)
+print(student.gpa)

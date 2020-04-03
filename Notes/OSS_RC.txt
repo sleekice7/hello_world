@@ -1,0 +1,59 @@
+With BHW, the user can retrieve and display - in a GUI - all relevant 
+information on installed hardware related MOs in a base station.
+
+BTS Hardware Management
+BSM is a common function used by BHW. BHW provides navigation 
+capabilities for hardware components of base stations with a 
+graphical browser which enables the user to browse through the MO 
+structure in a consistent and efficient way.
+
+BTS Alarm Management 
+BAM application provides the user with a functionality to restrict 
+the amount of alarms and to define the kind of alarms to be presented.
+This feature enables the user to filter alarms according to certain
+criteria, which depend on the current situation and makes it easier
+to concentrate on important alarms.
+
+WCDMA RAN Components
+The consistency check application is used to check whether network 
+elements in WCDMA RAN have consistent data. By using the consistency 
+check interface, a user can select the network elements and apply rules
+to check if they are consistent. The results of a consistency check are
+displayed in a report. Furthermore, a user can select individual tabs
+and specify the rules within the tabs: Power, Data Matching, Cell 
+Neighbour, Capacity Management, Congestion Control, HSDPA, Transport, 
+Attribute Unique
+
+Bulk CM is a means of configuring data for large networks using XML files
+
+WCDMA Diagnostic Tools
+Node Status Analyzer
+Health Check
+Cell Availability
+
+
+
+GFHR-19:000524 Uen Rev PA1
+
+job editor and task editor are job manager components
+mmcm
+network browser pane
+r-pmo offers fast reaction to problems and trouble-shooting
+ncs, mrr, fox are the tool in rno application
+collecton, and export
+includes, offers
+allowing, collecting
+
+LFCS
+edx.org
+Course resources: https://training.linuxfoundation.org/cm/LFS201/.
+user id: LFtraining  password: Penguin2014
+
+Virtualization
+this is a technique for using computing resources and devices in a 
+completely functional manner regardless of their physical layout or 
+location.
+
+READ:
+Kavis, Michael J. Architecting the Cloud: Design decisions for
+cloud computing service models(Saas, Paas, IaaS)(Wiley CIO)

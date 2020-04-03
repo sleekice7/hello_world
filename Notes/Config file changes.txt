@@ -1,0 +1,2 @@
+Sendmail $v/$z; $b
+*.* @@remote-host:514

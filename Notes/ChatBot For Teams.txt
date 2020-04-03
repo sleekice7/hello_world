@@ -1,0 +1,88 @@
+ChatBot For Teams
+
+###Use Rest API requests to generate news reports concerning the new COVID-19
+###Provide official Safety tips from WHO
+###Allow users to connect to other user for more information.
+
+Bot created Using IBM Watson Assistant
+Name of Bot Service: TeamsBot
+Credentials:
+	API Key: mt1JeM7i5wPFYbeU92PenzKUgsrc8TB198zBni4CgBP7
+	Url: https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/33953024-1152-4766-b9c0-11a5e08a6720
+	
+User Intents:
+#Request latest news and updates on the pandemic
+#Request for Safety tips
+#Provide More Information on the pandemic, by providing simple answers, 
+recommending online chatrooms,  credible online resources.
+
+#Educate:
+	User Examples: 
+		Is there a treatment for Covid-19?
+		Is there a vaccine?
+		What is Corona Virus?
+		What is Covid-19?
+		What are the symptoms of someone infected?
+		
+#Safety_tips:
+	User Example:
+		What protective gear do I need? 
+		How can I protect myself?
+		How do I learn not to touch my face, eyes, nose, and mouth?
+		How do I protect my family from the disease?
+		How long should I work from home?
+		How many times should I wash my hands in a day?
+		Where can I find affordable safety kit to purchase?
+		
+#Updates:
+	User Examples:
+		Has a vaccine been found?
+		How many confirmed cases so far?
+		How many deaths so far?
+		How many recoveries so far?
+		What are the latest updates about Covid-19?
+		What is the country doing to contain the situation?
+		What is the country doing to prevent spread?
+		
+		
+Ericsson Hackathon: 31/03/20
+===========================================
+Challenges to takle:
+Society
+Business
+Well-Being
+Ericsson Technology
+
+233246732705
+
+[‎4/‎2/‎2020 11:33 PM]  Issahaku Kamil:  
+ekamiss
+k&mil12345.
+ 
+
+
+
+starter-kit/assistant/skill-CDC-COVID-FAQ.json
+
+
+https://us-south.functions.cloud.ibm.com/api/v1/web/Developer%20Advocacy_Cloud%20Developer%20Advocacy/covid-starter-kit/discovery-covid-async.json
+
+
+
+kwabena@chalesankofa.onmicrosoft.com
+
+
+
+
+
+
+
+
+
+
+
+how many cases?
+is the virus airborne?
+how can I protect my family?
+should I wear face mask?
+
